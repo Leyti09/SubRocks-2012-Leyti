@@ -35,4 +35,4 @@ SubRocks is a faithful recreation & reverse engineering effort for 2012 YouTube.
   - Commenting
 
 Leyti SubRocks Recreation is here now
-Inspired by FulpTube and Better SubRocks
+- Inspired by FulpTube and Better SubRocks
