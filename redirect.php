@@ -1,0 +1,1 @@
+<?php header("Location: " . urldecode($_GET['q'])); ?> 
