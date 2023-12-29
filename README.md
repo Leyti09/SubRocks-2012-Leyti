@@ -32,3 +32,6 @@ SubRocks is a faithful recreation & reverse engineering effort for 2012 YouTube.
 - Reverse engineered ajax calls
   - Fixed guide response
   - Commenting
+
+Leyti SubRocks Recreation is here now
+Inspired by FulpTube and Better SubRocks
