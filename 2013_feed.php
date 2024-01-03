@@ -1,3 +1,8 @@
+ <?php if(isset($_GET['about'])) { ?>
+<?php require($_SERVER['DOCUMENT_ROOT'] . "/s/mod/2013_about.php"); ?>
+<?php } elseif(isset($_GET['channels'])) {
+require($_SERVER['DOCUMENT_ROOT'] . "/s/mod/2013_channels.php"); ?>
+<?php    } else{    ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/s/classes/config.inc.php"); ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/s/classes/db_helper.php"); ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/s/classes/time_manip.php"); ?>
