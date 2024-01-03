@@ -1,0 +1,13 @@
+# STOP. ADDING. .DS_STORE. FILES.
+*.DS_STORE
+*.DS_Store
+
+cookies.txt
+cookies_old.txt
+
+# ignore responses used for dev
+responses/*
+*_raw*
+
+# ignore top secret project
+dynamicpages/*

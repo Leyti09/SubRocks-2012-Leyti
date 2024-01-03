@@ -1,0 +1,22 @@
+------how to set up the 2012 player on your computer------
+make sure you have something cool like xampp or something
+and just copy all the files into your htdocs folder or where you put your website files, these work in a directory as well EXCEPT the get_video_info which HAS to be placed in the root and so does the html5_player_template
+continuing on, you'll see a nice video in the video folder. it's wide.mp4, it's there to tell you if you did it right.
+once you've copied all your files, visit "localhost/player?v=wide.mp4" or if you put it in a directory, "localhost/directory/player?v=wide.mp4"
+
+note: you can also use embed.php to test this rather than player, the player enables most of the site-player functionality when the embed is the embed functionality
+
+if you set it up right, you should have a play button staring back at you, just click it and if the video loads, you're smart.
+ok, now you're wondering, how do you change "Insert video name here" or "Insert author name here"?
+you'll have to edit two or three files to your liking, get_video_info.php and player.php or embed.php
+open them up with your preferred text editor, i use notepad++. 
+you'll see i left you with some variables to set, $name and $author, just set them to your liking.
+
+now how do you add your own video?
+make sure it's a <video> tag supported format (mp4? webm? ogv?)
+drop it into the video folder. if you copied rabbit.webm into the folder,
+access it like so: "blablabla/player?v=rabbit.webm"
+
+if it worked, give yourself a high-five.
+
+- crazy frog#8833

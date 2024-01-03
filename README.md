@@ -6,8 +6,7 @@ a 2012 rewrite for subrocks
 
 SubRocks is a faithful recreation & reverse engineering effort for 2012 YouTube. You can visit the site at https://subrock.rocks.
 
-![SubRocks 2012 Homepage](![image](https://github.com/MediaDanyaVideoEditor590/SubRocks-2012-Leyti/assets/81237600/56e5654d-0154-4037-a0ee-4511747894e8)
-)
+![SubRocks 2012 Homepage](https://i.imgur.com/gfLcCdI.png)
 
 **Things that you should expect soon:**
 - Dockerized
@@ -33,6 +32,3 @@ SubRocks is a faithful recreation & reverse engineering effort for 2012 YouTube.
 - Reverse engineered ajax calls
   - Fixed guide response
   - Commenting
-
-Leyti SubRocks Recreation is here now
-Inspired by FulpTube and Better SubRocks
