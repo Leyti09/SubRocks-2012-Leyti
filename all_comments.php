@@ -17,11 +17,23 @@
 	$_video['author'] = htmlspecialchars($_video['author']);		
 	$_video['title'] = htmlspecialchars($_video['title']);
 	$_video['description'] = $__video_h->shorten_description($_video['description'], 50);
+
+	$__server->page_embeds->page_title = "SubRocks - All Comments";
+	$__server->page_embeds->page_description = "SubRocks is a site dedicated to bring back the 2012 layout of YouTube.";
+	$__server->page_embeds->page_image = "/yt/imgbin/full-size-logo.png";
+	$__server->page_embeds->page_url = "https://subrock.rocks/";
+?>
+<?php
+	$__server->page_embeds->page_title = "SubRocks - All Comments";
+	$__server->page_embeds->page_description = "SubRocks is a site dedicated to bring back the 2012 layout of YouTube.";
+	$__server->page_embeds->page_image = "/yt/imgbin/full-size-logo.png";
+	$__server->page_embeds->page_url = "https://subrock.rocks/";
 ?>
 <?php $_video['comments'] = $__video_h->get_comments_from_video($_video['rid']); ?>
 <!DOCTYPE html>
 <html>
 	<head>
+		<title><?php echo $__server->page_embeds->page_title; ?></title>
 		<meta property="og:title" content="<?php echo $__server->page_embeds->page_title; ?>" />
 		<meta property="og:url" content="<?php echo $__server->page_embeds->page_url; ?>" />
 		<meta property="og:description" content="<?php echo $__server->page_embeds->page_description; ?>" />
