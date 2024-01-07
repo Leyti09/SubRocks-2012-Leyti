@@ -1,0 +1,1 @@
+<?php header("Location: /account?error=This feature has not been implemented yet."); ?>

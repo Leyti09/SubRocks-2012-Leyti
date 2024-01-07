@@ -8,10 +8,10 @@
 <?php $__db_h = new db_helper(); ?>
 <?php $__time_h = new time_helper(); ?>
 <?php
-	$__server->page_embeds->page_title = "Betatube";
+	$__server->page_embeds->page_title = "SubRocks";
 	$__server->page_embeds->page_description = "Share your videos with friends, family, and the world";
 	$__server->page_embeds->page_image = "/yt/imgbin/full-size-logo.png";
-	$__server->page_embeds->page_url = "https://www.betatube.net/";
+	$__server->page_embeds->page_url = "https://subrock.rocks/";
 ?>
 <html lang="en">
 	<head>
@@ -54,7 +54,7 @@
 							<div class="branded-page-v2-col-container clearfix">
 								<div class="branded-page-v2-primary-col">
 									<div class="branded-page-v2-primary-col-header-container">
-										<div id="context-source-container" data-context-source="Popular on Betatube" style="display:none;"></div>
+										<div id="context-source-container" data-context-source="Popular on YouTube" style="display:none;"></div>
 									</div>
 									<div class="branded-page-v2-body" id="gh-activityfeed">
 										<div class="context-data-container">
@@ -72,7 +72,7 @@
                                                             $video['description'] = $__video_h->shorten_description($video['description'], 50);
                                                     ?>
                                                         <div class="context-data-item" data-context-item-id="<?php echo $video['rid'];  ?>" data-context-item-type="video" data-context-item-title="<?php echo $video['title'];  ?>" data-context-item-views="<?php echo $video['views'];  ?> views" data-context-item-user="<?php echo $video['author'];  ?>" data-context-item-time="6:58">
-                                                            <a href="/watch?v=<?php echo $video['rid'];  ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto " data-sessionlink="ved=CAMQ0x4oAA&amp;ei=7pFAUZzAG52shAGGr4DACw&amp;feature=g-logo"><span class="video-thumb ux-thumb yt-thumb-default-370 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/dynamic/thumbs/<?php echo $video['thumbnail']; ?>" alt="Thumbnail" width="370"><span class="vertical-align"></span></span></span>
+                                                            <a href="/watch?v=<?php echo $video['rid'];  ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto " data-sessionlink="ved=CAMQ0x4oAA&amp;ei=7pFAUZzAG52shAGGr4DACw&amp;feature=g-logo"><span class="video-thumb ux-thumb yt-thumb-default-370 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/dynamic/thumbs/<?php echo $video['thumbnail']; ?>" alt="Thumbnail" width="370"><span class="vertical-align"></span></span></span></span><span class="video-time">6:58</span>
                                                             <button onclick=";return false;" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" title="Watch Later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $video['rid'];  ?>" role="button"><span class="yt-uix-button-content">  <img src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
                                                             </span>  <img class="yt-uix-button-arrow" src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title="">
                                                             </button>
@@ -87,7 +87,7 @@
                                                                 <?php echo $video['description'];  ?>
                                                             </p>
                                                             <a title="Trending" href="#" class="lohp-blog-attribution">
-                                                            <img src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" class="lohp-blog-decoration">Trending & Featured: Betatube
+                                                            <img src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" class="lohp-blog-decoration">Trending & Featured: SubRocks
                                                             </a>
                                                         </div>
                                                     <?php } ?>
@@ -132,7 +132,7 @@
 													<div class="lohp-shelf-cell-container lohp-category-shelf last-shelf-in-line recent-videos">
 														<div class="lohp-category-shelf-item-list lohp-shelf-size-3">
 															<h2 class="branded-page-module-title">
-																<a class="spf-link yt-uix-sessionlink" title="Entertainment" data-sessionlink="ved=CAoQzh4&amp;ei=7pFAUZzAG52shAGGr4DACw">
+																<a class="spf-link yt-uix-sessionlink" href="/channel/HCxAJ-ON2kZuw?feature=g-logo" title="Entertainment" data-sessionlink="ved=CAoQzh4&amp;ei=7pFAUZzAG52shAGGr4DACw">
 																Recent Videos
 																</a>
 															</h2>
@@ -250,11 +250,11 @@
 														<div class="lohp-category-shelf-item-list lohp-shelf-size-1">
 															<h2 class="branded-page-module-title">
 																<a class="spf-link yt-uix-sessionlink" href="/channel/UC9qMYlwD57jSfVPDJLySy9g?feature=g-logo" title="MaryHDennis3" data-sessionlink="ved=CBwQzh4&amp;ei=7pFAUZzAG52shAGGr4DACw">
-																    Betatube Updates
+																    bhief
 																</a>
 															</h2>
                                                             <?php
-                                                                $stmt = $__db->prepare("SELECT * FROM videos WHERE author = 'Betatube' ORDER BY rand() LIMIT 1");
+                                                                $stmt = $__db->prepare("SELECT * FROM videos WHERE author = 'bhief' ORDER BY rand() LIMIT 1");
                                                                 $stmt->execute();
                                                                 while($video = $stmt->fetch(PDO::FETCH_ASSOC)) {	
                                                                     $video['age'] = $__time_h->time_elapsed_string($video['publish']);		
@@ -434,6 +434,42 @@
 													</div>
                                                     <?php } ?>
 												</div>
+												<div class="lohp-vertical-shelf">
+													<h2 class="branded-page-module-title">
+														<a class="spf-link yt-uix-sessionlink" href="/channel/HC4qRk91tndwg?feature=g-logo" title="Most Popular" data-sessionlink="ved=CDQQzh4&amp;ei=7pFAUZzAG52shAGGr4DACw">
+                                                            Trending
+														</a>
+													</h2>
+                                                    <?php
+                                                        $stmt = $__db->prepare("SELECT * FROM videos WHERE category = 'Trending' ORDER BY rand() LIMIT 4");
+                                                        $stmt->execute();
+                                                        while($video = $stmt->fetch(PDO::FETCH_ASSOC)) {	
+                                                            $video['age'] = $__time_h->time_elapsed_string($video['publish']);		
+                                                            $video['duration'] = $__time_h->timestamp($video['duration']);
+                                                            $video['views'] = $__video_h->fetch_video_views($video['rid']);
+                                                            $video['author'] = htmlspecialchars($video['author']);		
+                                                            $video['title'] = htmlspecialchars($video['title']);
+                                                            $video['description'] = $__video_h->shorten_description($video['description'], 50);
+                                                    ?>	
+													<div class="lohp-vertical-shelf-item context-data-item" data-context-item-id="<?php echo $video['rid'];  ?>" data-context-item-type="video" data-context-item-title="<?php echo $video['title'];  ?>" data-context-item-views="303 views" data-context-item-user="<?php echo $video['author'];  ?>" data-context-item-time="<?php echo $video['duration'];  ?>">
+                                                        <div class="lohp-media-object">
+															<a href="/watch?v=<?php echo $video['rid'];  ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto " data-sessionlink="ved=CCsQzx4oAA&amp;ei=7pFAUZzAG52shAGGr4DACw&amp;feature=g-logo"><span class="video-thumb ux-thumb yt-thumb-default-64 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/dynamic/thumbs/<?php echo $video['thumbnail']; ?>" width="64"><span class="vertical-align"></span></span></span></span><span class="video-time"><?php echo $video['duration'];  ?></span>
+															<button onclick=";return false;" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" title="Watch Later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $video['rid'];  ?>" role="button"><span class="yt-uix-button-content">  <img src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+															</span>  <img class="yt-uix-button-arrow" src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title="">
+															</button>
+															</a>
+														</div>
+														<div class="lohp-vertical-shelf-item-content lohp-media-object-content">
+															<a class="lohp-video-link max-line-3 yt-uix-sessionlink" data-sessionlink="ved=CCsQzx4oAA&amp;ei=7pFAUZzAG52shAGGr4DACw&amp;feature=g-logo" href="/watch?v=<?php echo $video['rid'];  ?>" title="<?php echo $video['title'];  ?>"><?php echo $video['title'];  ?></a>
+															<div class="lohp-video-metadata attached">
+																<span class="content-uploader">
+																<span class="username-prepend">by</span> <a href="/user/<?php echo $video['author'];  ?>" class="yt-uix-sessionlink yt-user-name " data-sessionlink="ei=7pFAUZzAG52shAGGr4DACw" dir="ltr"><?php echo $video['author'];  ?></a>
+																</span>
+															</div>
+														</div>
+													</div>
+                                                    <?php } ?>
+												</div>
 											</div>
 											<div style="clear:both;"></div>
 										</div>
@@ -476,7 +512,7 @@
 			</div>
 		</div>
 		<div id="shared-addto-watch-later-login" class="hid">
-			Watch later on BetaTube? Are you crazy? I am too lazy to add that.
+			<a href="https://accounts.google.com/ServiceLogin?passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dplaylist%26hl%3Den_US%26next%3D%252F%26nomobiletemp%3D1&amp;uilel=3&amp;hl=en_US&amp;service=youtube" class="sign-in-link">Sign in</a> to add this to a playlist
 		</div>
 		<div id="shared-addto-menu" style="display: none;" class="hid sign-in">
 			<div class="addto-menu">

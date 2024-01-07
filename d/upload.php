@@ -40,10 +40,7 @@
     // $_FILES['video_file']['tmp_name'] = substr_replace($_FILES['video_file']['tmp_name'], '/', 8, 0);
     /* -- /tmp/phpfAN4Xu -- Why in the fuck does this happen? I love PHP */
 
-    if($__user_h->if_upload_cooldown($_SESSION['siteusername'])) { 
-        $video_validation->upload_error = "Under an upload cooldown";
-        $video_validation->upload_ok = 0;
-    }
+    
 
     if(move_uploaded_file(
         $_FILES['video_file']['tmp_name'], 

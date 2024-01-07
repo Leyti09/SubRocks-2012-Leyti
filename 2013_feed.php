@@ -1,4 +1,4 @@
- <?php if(isset($_GET['about'])) { ?>
+<?php if(isset($_GET['about'])) { ?>
 <?php require($_SERVER['DOCUMENT_ROOT'] . "/s/mod/2013_about.php"); ?>
 <?php } elseif(isset($_GET['channels'])) {
 require($_SERVER['DOCUMENT_ROOT'] . "/s/mod/2013_channels.php"); ?>

@@ -51,10 +51,22 @@
 
         $request->username = remove_emoji($request->username);
 
-        /* ALT DETECT */
-        $stmt = $__db->prepare("SELECT * FROM users WHERE ip = :ip");
-        $stmt->bindParam(":ip", $_SERVER["HTTP_CF_CONNECTING_IP"]);
-        $stmt->execute();
+     
+
+        if (!filter_var($request->email, FILTER_VALIDATE_EMAIL)) 
+            { $request->error->message = "Your email is invalid!"; $request->error->status = "";  }
+        if(strlen($request->username) > 21) 
+            { $request->error->message = "Your username must be shorter than 20 characters."; $request->error->status = ""; }
+        if(strlen($request->password) < 8) 
+            { $request->error->message = "Your password must at least be 8 characters long."; $request->error->status = ""; }
+        if(!preg_match('/[A-Za-z].*[0-9]|[0-9].*[A-Za-z]/', $request->password)) 
+            { $request->error->message = "Include numbers and letters in your password!"; $request->error->status = ""; }
+        if(preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $request->username))
+            { $request->error->message = "Your username cannot contain any special characters!"; $request->error->status = ""; }
+        if(!preg_match('/^\S+\w\S{1,}/', $request->username)) 
+            { $request->error->message = "Your username cannot contain any special characters!"; $request->error->status = ""; }
+        if(empty(trim($request->username))) 
+            { $request->error->message = "Your username cannot be empty!"; $request->error->status = ""; }
         
         $stmt = $__db->prepare("SELECT username FROM users WHERE username = lower(:username)");
         $stmt->bindParam(":username", $request->username);

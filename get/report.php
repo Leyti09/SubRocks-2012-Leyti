@@ -29,7 +29,7 @@ $reason = "Spam";
 
 $json_data = json_encode([
     // Message
-    "content" => "I reported '" . str_replace("@", "", $_video['title']) . "' [https://www.subrock.tk/watch?v=" . $_video['rid'] . "]",
+    "content" => "I reported '" . str_replace("@", "", $_video['title']) . "' [https://subrock.rocks/watch?v=" . $_video['rid'] . "]",
     
     // Username
     "username" => str_replace("@", "", $_SESSION['siteusername']),

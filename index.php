@@ -124,28 +124,7 @@ if (window.yt.timing) {yt.timing.tick("ct");}    </script>
 								</ul>
 								     <li class="guide-item-container hideable">
                         <li class="guide-item-container hideable">
-            <a id="social-guide-item" class="guide-item"
-                  data-feed-name="social_all"
-                data-feed-type="social">
-              <span class="thumb">
-                <img src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" class="system-icon social">
-              </span>
-              <span class="display-name">
-Social
-              </span>
-            </a>
-          </li>
-              <li class="guide-item-container hideable">
-    <a class="guide-item"
-       data-feed-name="BE-FO9JUOghSysV9gjTeHw"
-       data-feed-type="user">
-        <span class="thumb">  <span class="video-thumb ux-thumb yt-thumb-square-28 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="//i3.ytimg.com/i/BE-FO9JUOghSysV9gjTeHw/1.jpg?v=4f3c90ff" width="28" ><span class="vertical-align"></span></span></span></span>
-</span>
-      <span class="display-name">
-          nixiedoeslinux
-      </span>
-    </a>
-  </li>
+           
 								<div class="guide-item-container">
 									<span class="guide-item guide-item-action guide-item-fake">
 							<a style="display: none;" href="/web/20121123233507/http://www.youtube.com/videos?feature=hp">&nbsp;<img src="//s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" class="see-more-arrow" alt=""></a>        </span>

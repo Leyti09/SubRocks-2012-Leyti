@@ -59,7 +59,7 @@
 
                                                                 while($comment = $stmt->fetch(PDO::FETCH_ASSOC)) { 
 
-                                                            ?>
+                                                            ?><?php $commenter = $__user_h->fetch_user_username($comment['author']); ?>
 
                                                                 <li class="comment yt-tile-default " data-author-viewing="" data-author-id="-uD01K8FQTeOSS5sniRFzQ" data-id="<?php echo $comment['id']; ?>" data-score="0">
                                                                     <div class="comment-body">
@@ -70,7 +70,7 @@
                                                                                 </div>
                                                                                 <p class="metadata">
                                                                                     <span class="author ">
-                                                                                    <a href="/user/<?php echo htmlspecialchars($comment['author']); ?>" class="yt-uix-sessionlink yt-user-name " data-sessionlink="<?php echo htmlspecialchars($comment['author']); ?>" dir="ltr"><?php echo htmlspecialchars($comment['author']); ?></a>
+                                                                                    <a href="/user/<?php echo htmlspecialchars($comment['author']); ?>" class="yt-uix-sessionlink yt-user-name " data-sessionlink="<?php echo htmlspecialchars($comment['author']); ?>" dir="ltr"><?php if($commenter['title'])	{	?><?php echo htmlspecialchars($commenter['title']); ?><?php } else {	?><?php echo htmlspecialchars($comment['author']); ?><?php	}	?></a>
                                                                                     </span>
                                                                                     <span class="time" dir="ltr">
                                                                                     <span dir="ltr"><?php echo $__time_h->time_elapsed_string($comment['date']); ?><span>
